@@ -1,0 +1,9 @@
+# Проверка аккаунтов с разными useragent
+ file = open('useragents.txt')
+ list =[]
+ for line in file:
+     line=line.replace('\n','')
+     list.append(line)
+
+ Actions.CheckAccounts('pass.txt',list)
+
